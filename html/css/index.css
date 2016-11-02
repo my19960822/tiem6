@@ -1,0 +1,284 @@
+/*清除默认样式*/
+body,ul,li,h2,dl,dt,dd{margin: 0;padding: 0;}
+ul,ol{list-style:none;}
+a{text-decoration: none;}
+h2{font-size:100%;}
+
+/*通用样式*/
+.fl{float: left;}
+.fr{float: right;}
+.clearfix {
+  overflow: hidden;
+  zoom: 1;
+}/*清理浮动*/
+
+
+/*————————————————————导航————————————————————*/	
+nav{
+	width: 1278px;
+	height: 97px;
+	margin: 0 auto;
+	line-height: 97px;
+}
+nav img{
+	vertical-align: middle;
+}
+nav img:nth-child(2){
+	margin-left: 12px;
+}
+nav .subnav{
+	height: 97px;
+	width: 710px;
+	position: relative;
+}
+
+nav .subnav a{
+	vertical-align: middle;
+	color: #666;
+	width: 86.281px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 15px;
+	display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    z-index: 5;
+}
+nav .subnav ul{
+	position: absolute;
+	transition:.5s;
+	left: 110.281px;
+	top: 64px;
+	z-index: 5;
+	height: 0px;
+	overflow: hidden;
+	transition:.7s;
+}
+nav .subnav ul:nth-child(8){
+	left: 220.562px;
+}
+nav .subnav ul:nth-child(9){
+	left: 330.562px;
+}
+nav .subnav ul:nth-child(10){
+	left: 440.562px;
+}	
+nav .subnav ul li{
+	height: 32px;
+}
+nav .subnav ul li a{
+    background: url("../img/syImg/4170137_未标题-1.png") no-repeat;
+    background-position: 50% 50%;
+    color: #666666;
+    font-size: 12px;
+    display: block;
+}
+
+/*————————————————————轮播图————————————————————*/
+#carousel{
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+}
+#carousel .wrap{
+	position: relative;
+	left: 0;
+}
+#carousel ul{
+	width: 1440px;
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+}
+#carousel ul li{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	border-radius: 100%;
+	background-color: #ccc;
+	margin: 4px;
+}
+
+/*————————————————————内容————————————————————*/
+#main{
+	width: 1201px;
+	margin: 0 auto;
+	margin-top: 0;
+}
+#main .left a{
+	display: block;
+	width: 653px;
+	margin-bottom: 20px;
+}
+#main .left a:nth-child(1){
+    height: 340px;
+    background: url("../img/syImg/4169852_2_03.png") no-repeat;
+}
+#main .left a:nth-child(1):hover{
+    background: url("../img/syImg/4169851_1_03.png") no-repeat;
+}
+#main .left a:nth-child(2){
+    height: 217px;
+    background: url("../img/syImg/4169855_1_06.png") no-repeat;
+}
+#main .left a:nth-child(2):hover{
+    background: url("../img/syImg/4169854_2_06.png") no-repeat;
+}
+#main .right a{
+	display: block;
+	width: 526px;
+	margin-bottom: 20px;
+}
+#main .right a:nth-child(1){
+    height: 219px;
+    background: url("../img/syImg/4169858_1_06.png") no-repeat;
+}
+#main .right a:nth-child(1):hover{
+    background: url("../img/syImg/4169861_2_06.png") no-repeat;
+}
+#main .right a:nth-child(2){
+    height: 158px;
+    background: url("../img/syImg/4169857_1_03.png") no-repeat;
+}
+#main .right a:nth-child(2):hover{
+    background: url("../img/syImg/4169860_2_03.png") no-repeat;
+}
+#main .right a:nth-child(3){
+    height: 160px;
+    background: url("../img/syImg/4169859_1_08.png") no-repeat;
+}
+#main .right a:nth-child(3):hover{
+    background: url("../img/syImg/4169856_2_08.png") no-repeat;
+}
+#main .bottom a{
+	display: inline-block;
+	height: 186px;
+	margin-right: 1px;
+}
+#main .bottom a:nth-child(1){
+    width: 393px;
+    background: url("../img/syImg/4169949_1_03.png") no-repeat;
+}
+#main .bottom a:nth-child(1):hover{
+    background: url("../img/syImg/4169953_2_03.png") no-repeat;
+}
+#main .bottom a:nth-child(2){
+    width: 269px;
+    background: url("../img/syImg/4169950_1_05.png") no-repeat;
+}
+#main .bottom a:nth-child(2):hover{
+    background: url("../img/syImg/4169954_2_05.png") no-repeat;
+}
+#main .bottom a:nth-child(3){
+    width: 267px;
+    background: url("../img/syImg/4169951_1_07.png") no-repeat;
+}
+#main .bottom a:nth-child(3):hover{
+    background: url("../img/syImg/4169955_2_07.png") no-repeat;
+}
+#main .bottom a:nth-child(4){
+    width: 267px;
+    background: url("../img/syImg/4169952_1_09.png") no-repeat;
+}
+#main .bottom a:nth-child(4):hover{
+    background: url("../img/syImg/4169956_2_09.png") no-repeat;
+}
+/*————————————————————页脚————————————————————*/
+.footer{
+	width: 1414px;
+	height: 300px;
+	margin: 4px auto;
+	background: rgb(235,235,235);
+}
+.footer dl{
+	display: inline-block;
+	width: 267px;
+	margin-top: 34px;
+	vertical-align: top;
+	padding-left: 50px;
+}
+.footer dl:nth-child(1){
+	margin-left: 120px;
+	background: url("../img/syImg/4121130_关注我们.png") no-repeat;
+}
+.footer dl:nth-child(2){
+	background: url("../img/syImg/4121138_下载中心.png") no-repeat;
+}
+.footer dl:nth-child(3){
+	background: url("../img/syImg/4121133_人才招聘.png") no-repeat;
+}
+.footer dl:nth-child(4){
+	background: url("../img/syImg/4121167_电话图标.png") no-repeat;
+}
+.footer dl dt{
+	line-height: 30px;
+	font-size: 18px;
+    color: #015c6f;
+}
+.footer dl span{
+	display: block;
+	font-size: 12px;
+	color: #8c8c8c;
+	line-height: 18px;
+	margin: 10px 0 7px 0;
+}
+.footer dl dd{
+	line-height: 33.75px;
+	padding-left: 10px;
+}
+.footer dl:nth-child(4) dd{
+	font-size: 24px;
+	padding-left: 0;
+}
+.footer dl dd a{
+	color: #444;
+}
+.footer .wx{
+	padding-left: 38px;
+	background: url("../img/syImg/4121137_微信.png") no-repeat left bottom;
+}
+.footer .wb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121136_微博.png") no-repeat left bottom;
+}
+.footer .tb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121134_淘宝.png") no-repeat left bottom;
+}
+.footer .albb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121168_阿里巴巴.png") no-repeat left bottom;
+}
+
+.connection{
+	width: 735.625px;
+	text-align: center;
+	display:block;
+	font-size: 12px;
+	color: #3e3e3e;
+	cursor: default;
+	margin: 0 auto;
+	line-height: 18px;
+	margin-top: 18px;
+}
+.copyright{
+	width: 448.125px;
+	text-align: center;
+	display:block;
+	font-size: 12px;
+	line-height: 18px;
+	color: #3e3e3e;
+	cursor: default;
+	margin: 0 auto;
+}
+.poweredby{
+	width: 430px;
+	margin: 0 auto;
+	margin-top: 8px; 
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+}
+.poweredby a{
+	color: #666;
+}

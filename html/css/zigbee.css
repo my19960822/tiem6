@@ -1,0 +1,312 @@
+/*清除默认样式*/
+body,ul,li,h2,dl,dt,dd{margin: 0;padding: 0;}
+ul,ol{list-style:none;}
+a{text-decoration: none;}
+h2{font-size:100%;}
+body{
+	color: #000;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    
+}
+
+/*通用样式*/
+.fl{float: left;}
+.fr{float: right;}
+.clearfix {
+  overflow: hidden;
+  zoom: 1;
+}/*清理浮动*/
+
+/*————————————————————导航————————————————————*/
+
+.topnav{
+	height: 28px;
+    background-color: #525357;
+}
+.topnav .topsubnav{
+	width: 1200px;
+	margin: 0 auto;
+}
+.topnav .topsubnav a{
+	height: 32px;
+	line-height: 32px;
+	font-size: 13px;
+	color: #999999;
+    font-weight: normal;
+    width: 71.5px;
+    padding: 0 10px;
+    display: inline-block;
+}
+nav{
+	height: 130px;
+	background: url('../img/BLEImg/4722081_未标题-3.png') no-repeat;
+	background-position: 50% 50%;
+}
+nav .subnav{
+	width: 1200px;
+	margin: 0 auto;
+}
+nav .subnav .subnav_left{
+	width: 280px;
+	line-height: 130px;
+}
+nav .subnav .subnav_left span{
+	color: #fff;
+    font-size: 24px;
+    padding-left: 60px;
+}
+nav .subnav .subnav_right{
+	width: 920px;
+	line-height: 130px;
+	text-align: right;
+}
+
+nav .subnav .subnav_right a{
+	color: #fff;
+	font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 40px;
+    height: 40px;
+    width: 99px;
+    display: inline-block;
+    text-align: center;
+    font-style: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+
+/*————————————————————内容————————————————————*/
+#main{
+	width: 1142px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+.logo{
+	width: 1166px;
+	margin: 20px auto;
+	display: block;
+	height: 30px;
+	color: rgb(63, 63, 63);
+    font-family: arial, helvetica, sans-serif;
+    font-size: 20px;
+}
+#main .first{
+	height: 55px;
+	background: #EEE;
+}
+#main .first .subfirst{
+	width: 200px;
+	display: inline-block;
+	line-height: 52px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: #004590;
+    border-top: 2px solid #f1b35c;
+}
+
+#main .first #subfirst2{
+	background: none;
+    border-top: none;
+    color: #000;
+}
+#main .bottom .content{
+	width: 1075px;
+	margin: 26px 36px 50px 30px;
+	border: 1px solid #ccc;
+}
+#main .bottom .content .column{
+	height: 48px;
+}
+#main .bottom .content .column span{
+	word-break: break-all;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    background: rgb(255, 153, 51);
+    line-height: 48px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+#main .bottom .content .column span:nth-child(1){
+	width: 212px;
+}
+#main .bottom .content .column span:nth-child(2){
+	width: 138px;
+}
+#main .bottom .content .column span:nth-child(3){
+	width: 194px;
+}
+#main .bottom .content .column span:nth-child(4){
+	width: 194px;
+}
+#main .bottom .content .column span:nth-child(5){
+	width: 154px;
+}
+#main .bottom .content .column span:nth-child(6){
+	width: 178px;
+	border-right: none;
+}
+#main .bottom .content .Products{
+	height: 182px;
+	/*vertical-align: middle;*/
+}
+#main .bottom .content .Products a:nth-child(1){
+	width: 212px;
+	height: 182px;
+	border-bottom: 1px solid #ccc;
+}
+#main .bottom .content .Products a:nth-child(1) img{
+	margin-top: 1px;
+	width: 190px;
+}
+#main .bottom .content .Products a:nth-child(5){
+	width: 154px;
+	white-space: normal;
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    line-height: 182px;
+    border-bottom: 1px solid #ccc;
+    text-decoration: underline;
+}
+#main .bottom .content .Products span{
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	line-height: 182px;
+	height: 182px;
+	border-right: 1px solid #ccc;
+	vertical-align: middle;
+}
+#main .bottom .content .Products a{
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	height: 182px;
+	border-right: 1px solid #ccc;
+	vertical-align: middle;
+}
+#main .bottom .content .Products span:nth-child(2){
+	width: 138px;
+	border-bottom: 1px solid #ccc;
+}
+#main .bottom .content .Products span:nth-child(3){
+	width: 194px;
+	border-bottom: 1px solid #ccc;
+}
+#main .bottom .content .Products span:nth-child(4){
+	width: 194px;
+	border-bottom: 1px solid #ccc;
+}
+#main .bottom .content .Products span:nth-child(6){
+	width: 178px;
+	border-right: none;
+	border-bottom: 1px solid #ccc;
+}
+
+/*————————————————————页脚————————————————————*/
+.footer{
+	width: 1414px;
+	height: 300px;
+	margin: 4px auto;
+	background: rgb(235,235,235);
+}
+.footer dl{
+	display: inline-block;
+	width: 267px;
+	margin-top: 34px;
+	vertical-align: top;
+	padding-left: 50px;
+}
+.footer dl:nth-child(1){
+	margin-left: 120px;
+	background: url("../img/syImg/4121130_关注我们.png") no-repeat;
+}
+.footer dl:nth-child(2){
+	background: url("../img/syImg/4121138_下载中心.png") no-repeat;
+}
+.footer dl:nth-child(3){
+	background: url("../img/syImg/4121133_人才招聘.png") no-repeat;
+}
+.footer dl:nth-child(4){
+	background: url("../img/syImg/4121167_电话图标.png") no-repeat;
+}
+.footer dl dt{
+	line-height: 30px;
+	font-size: 18px;
+    color: #015c6f;
+}
+.footer dl span{
+	display: block;
+	font-size: 12px;
+	color: #8c8c8c;
+	line-height: 18px;
+	margin: 10px 0 7px 0;
+}
+.footer dl dd{
+	line-height: 33.75px;
+	padding-left: 10px;
+}
+.footer dl:nth-child(4) dd{
+	font-size: 24px;
+	padding-left: 0;
+}
+.footer dl dd a{
+	color: #444;
+}
+.footer .wx{
+	padding-left: 38px;
+	background: url("../img/syImg/4121137_微信.png") no-repeat left bottom;
+}
+.footer .wb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121136_微博.png") no-repeat left bottom;
+}
+.footer .tb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121134_淘宝.png") no-repeat left bottom;
+}
+.footer .albb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121168_阿里巴巴.png") no-repeat left bottom;
+}
+
+
+.connection{
+	width: 735.625px;
+	text-align: center;
+	display:block;
+	font-size: 12px;
+	color: #3e3e3e;
+	cursor: default;
+	margin: 0 auto;
+	line-height: 18px;
+	margin-top: 18px;
+}
+.copyright{
+	width: 448.125px;
+	text-align: center;
+	display:block;
+	font-size: 12px;
+	line-height: 18px;
+	color: #3e3e3e;
+	cursor: default;
+	margin: 0 auto;
+}
+.poweredby{
+	width: 430px;
+	margin: 0 auto;
+	margin-top: 8px; 
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+}
+.poweredby a{
+	    color: #666;
+}

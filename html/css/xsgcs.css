@@ -1,0 +1,275 @@
+/*清除默认样式*/
+body,ul,li,h2,dl,dt,dd,p{margin: 0;padding: 0;}
+ul,ol{list-style:none;}
+a{text-decoration: none;}
+h2{font-size:100%;}
+
+/*通用样式*/
+.fl{float: left;}
+.fr{float: right;}
+.clearfix {
+  overflow: hidden;
+  zoom: 1;
+}/*清理浮动*/
+
+
+/*————————————————————导航————————————————————*/	
+nav{
+	width: 1278px;
+	height: 97px;
+	margin: 0 auto;
+	line-height: 97px;
+}
+nav img{
+	vertical-align: middle;
+}
+nav img:nth-child(2){
+	margin-left: 12px;
+}
+nav .subnav{
+	height: 97px;
+	width: 710px;
+	position: relative;
+}
+
+nav .subnav a{
+	vertical-align: middle;
+	color: #666;
+	width: 86.281px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 15px;
+	display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    z-index: 5;
+}
+nav .subnav ul{
+	position: absolute;
+	transition:.5s;
+	left: 110.281px;
+	top: 64px;
+	z-index: 5;
+	height: 0px;
+	overflow: hidden;
+	transition:.7s;
+}
+nav .subnav ul:nth-child(8){
+	left: 220.562px;
+}
+nav .subnav ul:nth-child(9){
+	left: 330.562px;
+}
+nav .subnav ul:nth-child(10){
+	left: 440.562px;
+}	
+nav .subnav ul li{
+	height: 32px;
+}
+nav .subnav ul li a{
+    background: url("../img/syImg/4170137_未标题-1.png") no-repeat;
+    background-position: 50% 50%;
+    color: #666666;
+    font-size: 12px;
+    display: block;
+}
+
+/*————————————————————页面主体————————————————————*/
+.companyImg{
+	display: block;
+	margin: 2px auto;
+}
+.main{
+	width: 1280px;
+	height: 675px;
+	margin: 0 auto;
+	margin-top: 16px;
+}
+.main .profile{
+	display: block;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 28px;
+	margin-bottom: 30px;
+	padding-left: 10px;
+}
+.main .wrap{
+	width: 849px;
+	height: 440px;
+	border: 1px solid rgb(49, 133, 155);
+	color: rgb(1, 92, 111);
+}
+.main .wrap ul{
+	line-height: 21px;
+	font-size: 14px;
+	color: #015c6f;
+}
+.main .wrap ul li{
+	height: 21px;
+	width: 156px;
+	border: 1px solid rgb(49, 133, 155);
+	padding: 5px 10px;
+	display: inline-block;
+	vertical-align: middle;
+	border-top: none;
+	border-left: none;
+}
+.main .wrap ul li:nth-of-type(2){
+	width: 86px;
+	color: #000;
+}
+.main .wrap ul li:nth-of-type(3){
+	width: 216px;
+}
+.main .wrap ul li:nth-of-type(4){
+	width: 88px;
+}
+.main .wrap ul li:nth-of-type(5){
+	width: 89px;
+}
+.main .wrap ul li:nth-of-type(6){
+	width: 88px;
+	border-right: none;
+}
+.main .wrap dl{
+	font-size: 14px;
+	color: #015c6f;
+}
+.main .wrap dl dt{
+	height: 333px;
+	width: 156px;
+	border: 1px solid rgb(49, 133, 155);
+	padding: 5px 10px;
+	border-top: none;
+	border-left: none;
+	float: left;
+}
+.main .wrap dl dd{
+	height: 333px;
+	width: 651px;
+	border: 1px solid rgb(49, 133, 155);
+	padding: 5px 10px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	float: left;
+	color: rgb(127, 127, 127);
+}
+.main .wrap dl dd p{
+	line-height: 1.5;
+}
+.main .wrap dl:nth-of-type(2) dt{
+	height: 21px;
+	border-bottom: none;
+	color: #000;
+}
+.main .wrap dl:nth-of-type(2) dd{
+	height: 21px;
+	border-bottom: none;
+}
+.main .wrap .jq{
+	 color: rgb(36, 64, 97);
+	 font-size: 14px;
+}
+.main .wrap .px39{
+	height: 39px;
+}
+/*————————————————————页脚————————————————————*/
+.footer{
+	width: 1414px;
+	height: 300px;
+	margin: 4px auto;
+	background: rgb(235,235,235);
+}
+.footer dl{
+	display: inline-block;
+	width: 267px;
+	margin-top: 34px;
+	vertical-align: top;
+	padding-left: 50px;
+}
+.footer dl:nth-child(1){
+	margin-left: 120px;
+	background: url("../img/syImg/4121130_关注我们.png") no-repeat;
+}
+.footer dl:nth-child(2){
+	background: url("../img/syImg/4121138_下载中心.png") no-repeat;
+}
+.footer dl:nth-child(3){
+	background: url("../img/syImg/4121133_人才招聘.png") no-repeat;
+}
+.footer dl:nth-child(4){
+	background: url("../img/syImg/4121167_电话图标.png") no-repeat;
+}
+.footer dl dt{
+	line-height: 30px;
+	font-size: 18px;
+    color: #015c6f;
+}
+.footer dl span{
+	display: block;
+	font-size: 12px;
+	color: #8c8c8c;
+	line-height: 18px;
+	margin: 10px 0 7px 0;
+}
+.footer dl dd{
+	line-height: 33.75px;
+	padding-left: 10px;
+}
+.footer dl:nth-child(4) dd{
+	font-size: 24px;
+	padding-left: 0;
+}
+.footer dl dd a{
+	color: #444;
+}
+.footer .wx{
+	padding-left: 38px;
+	background: url("../img/syImg/4121137_微信.png") no-repeat left bottom;
+}
+.footer .wb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121136_微博.png") no-repeat left bottom;
+}
+.footer .tb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121134_淘宝.png") no-repeat left bottom;
+}
+.footer .albb{
+	padding-left: 38px;
+	background: url("../img/syImg/4121168_阿里巴巴.png") no-repeat left bottom;
+}
+
+.connection{
+	width: 735.625px;
+	text-align: center;
+	display:block;
+	font-size: 12px;
+	color: #3e3e3e;
+	cursor: default;
+	margin: 0 auto;
+	line-height: 18px;
+	margin-top: 18px;
+}
+.copyright{
+	width: 448.125px;
+	text-align: center;
+	display:block;
+	font-size: 12px;
+	line-height: 18px;
+	color: #3e3e3e;
+	cursor: default;
+	margin: 0 auto;
+}
+.poweredby{
+	width: 430px;
+	margin: 0 auto;
+	margin-top: 8px; 
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+}
+.poweredby a{
+	color: #666;
+}
