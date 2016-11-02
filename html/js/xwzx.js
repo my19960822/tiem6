@@ -1,15 +1,30 @@
-var img,a2,p;
+var a = 0;
+var arr;
 $.ajax({
     url: "../../php/code/xwzx.php",    //请求的url地址
     dataType: "json",   //返回格式为json
     type: "GET",   //请求方式
-    success: function(arr) {
-    	create(arr)
-    	show(arr,1);
+    async:false,
+    success: function(arr1) {
         //请求成功时处理
+        arr=arr1;
 	}        
 });
-function pageCon(arr,start,len){
+	create(arr)
+    show(arr,1);
+	function alter(arr) {
+		var img = document.getElementsByClassName('img');
+		var a2 = document.getElementsByClassName('title');
+		var p = document.getElementsByClassName('content');
+		for (var i = 0; i < arr.length; i++) {
+			img[i].src = "../img/xwzxImg/"+arr[i].img;
+			console.log("../img/xwzxImg/"+arr[i].img);
+			a2[i].innerHTML = arr[i].title;
+			p[i].innerHTML = arr[i].content;	
+		}
+		
+	}
+	function pageCon(arr,start,len){
       var constr=[];
       for(var i=start;i<start+len;i++){
           if(arr[i-1]){constr.push(arr[i-1])} 
@@ -30,7 +45,7 @@ function pageCon(arr,start,len){
 		      };
 		    page_str+='<span onclick="show(arr,'+(now_page-1)+')">'+(now_page-1)+'</span>';
 		  };
-		    page_str+="<span style='background:black;color:white;margin:0'>"+now_page+"</span>";
+		    page_str+="<span style='background:#036cb4;color:white;margin:0'>"+now_page+"</span>";
 		
 		  if (now_page<page_num) {
 		    page_str+='<span onclick="show(arr,'+(now_page+1)+')">'+(now_page+1)+'</span>';
@@ -42,32 +57,33 @@ function pageCon(arr,start,len){
 		  };
 		  
 		  var constr=pageCon(arr,start,page_size);
-		      	console.log(constr);
-		  	alter(constr);		  
-        		$('.wrap').html(page_str);
+		  	alter(constr);
+		  	if (a==0) {
+		  		var bbb = $("<div/>");
+		  		bbb.addClass("fylj");
+		  		$('.wrap').append(bbb);
+		  		a=1
+		  	};		  	  
+        	$(".fylj").html(page_str);
 		}
     
 
-function alter(arr) {
-	for (var i = 0; i < arr.length; i++) {
-		img.attr("src","../img/xwzxImg/"+arr[i].img);
-		a2.text(arr[i].title);
-		p.text(arr[i].content)	
-	}
-}
 
 function create(arr){
-	for (var i = 0; i < 10; i++) {
+	for (var i = 0; i < 8; i++) {
 		var news = $("<div/>");
 		news.addClass("news");
 		$(".wrap").append(news);
 		var a1 = $("<a/>")
 		news.append(a1)
-		img = $("<img/>");		
+		var img = $("<img/>");
+		img.addClass("img");		
 		a1.append(img);
-		a2 = $("<a/>")		
+		var a2 = $("<a/>")
+		a2.addClass("title");	
 		news.append(a2)
-		p = $("<p/>");		
+		var p = $("<p/>");
+		p.addClass("content");		
 		news.append(p);
 		a1.attr("href","#");
 		a2.attr("href","#");
