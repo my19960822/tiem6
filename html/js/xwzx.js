@@ -40,6 +40,9 @@ $.ajax({
 		  if (now_page>1) {
 		    page_str+='<span onclick="show(arr,1)">首页</span>';
 		    page_str+='<span onclick="show(arr,'+(now_page-1)+')">上一页</span>';
+		    if (now_page-1!=1) {
+      			page_str+='<span onclick="show(arr,'+(now_page-1)+')">...</span>';
+    		};
 		    if (now_page==page_num) {
 		        page_str+='<span onclick="show(arr,'+(now_page-2)+')">'+(now_page-2)+'</span>';
 		      };
@@ -52,6 +55,9 @@ $.ajax({
 		      if (now_page==1) {
 		        page_str+='<span onclick="show(arr,'+(now_page+2)+')">'+(now_page+2)+'</span>';
 		      };
+		      if (now_page+1!=page_num) {
+      			page_str+='<span onclick="show(arr,'+(now_page+1)+')">...</span>';
+    		  };
 		    page_str+='<span onclick="show(arr,'+(now_page+1)+')">下一页</span>';
 		    page_str+='<span onclick="show(arr,'+(page_num)+')">尾页</span>';
 		  };
