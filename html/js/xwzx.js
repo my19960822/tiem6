@@ -18,7 +18,6 @@ $.ajax({
 		var p = document.getElementsByClassName('content');
 		for (var i = 0; i < arr.length; i++) {
 			img[i].src = "../img/xwzxImg/"+arr[i].img;
-			console.log("../img/xwzxImg/"+arr[i].img);
 			a2[i].innerHTML = arr[i].title;
 			p[i].innerHTML = arr[i].content;	
 		}

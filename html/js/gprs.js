@@ -14,7 +14,7 @@ function create(arr){
 		Products.addClass("Products");
 		$(".content").append(Products);
 		var ProductsA = $("<a/>");
-		ProductsA.attr("href","#");
+		ProductsA.attr("href","../html/subcpzx.html");
 		Products.append(ProductsA);
 		var img = $("<img/>");
 		img.attr("src","../img/GPRSImg/"+arr[i].product);
@@ -29,7 +29,7 @@ function create(arr){
 		port.text(arr[i].port);
 		Products.append(port);
 		var remark = $("<a>");
-		remark.attr("href","#");
+		remark.attr("href","../html/subcpzx.html");
 		remark.text("查看详情>>");
 		Products.append(remark);
 		var remark = $("<span/>");
