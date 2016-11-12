@@ -22,9 +22,5 @@ function create(arr){
 		var p = $("<p/>");
 		p.text(arr[i].content)
 		logo.append(p);
-		var a = $("<a/>");
-		a.attr("href","#");
-		a.text("查看更多>>")
-		p.append(a);
 	}
 }
