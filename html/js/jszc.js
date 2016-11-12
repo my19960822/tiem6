@@ -56,7 +56,7 @@ function create(arr,wrap){
 		var p = $("<p/>");
 		$(wrap).append(p);
 		var title = $("<a/>");
-		title.attr("href","#");
+		title.attr("href","http://www.shuncom.com/filedownload/4707");
 		title.text(arr[i].title)
 		p.append(title);
 		var time = $("<span/>");
